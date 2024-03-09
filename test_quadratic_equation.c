@@ -7,7 +7,6 @@ START_TEST(quadratic_equation_0) {
   printf("\ntest 1: x^2 + 2x - 3 = 0 \nx1 = %f, x2 = %f\n\n", x1, x2);
   ck_assert_double_eq(-3, x1);
   ck_assert_double_eq(1, x2);
-  free(res);
 }
 END_TEST
 
@@ -18,7 +17,6 @@ START_TEST(quadratic_equation_1) {
   printf("test 2: 2x^2 + 4x - 1 = 0 \nx1 = %f, x2 = %f\n\n", x1, x2);
   ck_assert_double_eq_tol(-2.2247, x1, 1e-4);
   ck_assert_double_eq_tol(0.2247, x2, 1e-4);
-  free(res);
 }
 END_TEST
 
@@ -29,7 +27,6 @@ START_TEST(quadratic_equation_2) {
   printf("test 3: - 2x^2 + 7x - 2 = 0 \nx1 = %f, x2 = %f\n\n", x1, x2);
   ck_assert_double_eq_tol(3.1861, x1, 1e-4);
   ck_assert_double_eq_tol(0.3138, x2, 1e-4);
-  free(res);
 }
 END_TEST
 
