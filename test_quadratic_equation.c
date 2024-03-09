@@ -1,7 +1,7 @@
 #include "test_quadratic_equation.h"
 
 START_TEST(quadratic_equation_0) {
-  double *res = solve_equation(1, 2, 3);
+  double *res = solve_equation(1, 2, -3);
   double x1 = res[0];
   double x2 = res[1];
   printf("\ntest 1: x^2 + 2x - 3 = 0 \nx1 = %f, x2 = %f\n\n", x1, x2);
@@ -12,7 +12,7 @@ START_TEST(quadratic_equation_0) {
 END_TEST
 
 START_TEST(quadratic_equation_1) {
-  double *res = solve_equation(2, 4, 1);
+  double *res = solve_equation(2, 4, -1);
   double x1 = res[0];
   double x2 = res[1];
   printf("test 2: 2x^2 + 4x - 1 = 0 \nx1 = %f, x2 = %f\n\n", x1, x2);
@@ -23,7 +23,7 @@ START_TEST(quadratic_equation_1) {
 END_TEST
 
 START_TEST(quadratic_equation_2) {
-  double *res = solve_equation(-2, 7, 2);
+  double *res = solve_equation(-2, 7, -2);
   double x1 = res[0];
   double x2 = res[1];
   printf("test 3: - 2x^2 + 7x - 2 = 0 \nx1 = %f, x2 = %f\n\n", x1, x2);
